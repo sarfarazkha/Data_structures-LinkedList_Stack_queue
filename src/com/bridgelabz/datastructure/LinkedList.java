@@ -16,15 +16,22 @@ public class LinkedList<T> {
     }
 
     public void add(T data) {
-        Node<T> obj2= new Node<>(data);
+        Node<T> newnode= new Node<>(data);
         if (head == null) {
-            head = obj2;
-            tail = obj2;
+            head = newnode;
+            tail = newnode;
         } else {
-            tail.next=obj2;
-            tail = obj2;
+            tail.next=newnode;
+            tail = newnode;
         }
     }
+
+    public void insertBetween(T insertData) {
+        Node<T> newnode= new Node<>(insertData);
+        head.next=newnode;
+        newnode.next=tail;
+    }
+
 
     public void display() {
         Node<T> temp = head;

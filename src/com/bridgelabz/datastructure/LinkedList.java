@@ -52,7 +52,22 @@ public class LinkedList<T> {
         temp.next = null;
         tail = temp;
         return popData;
+    }
 
+    public Node<T> Search(T searchData)
+    {
+        Node<T> temp=head;
+        Node<T> searchedNode=null;
+        while(temp!=null)
+        {
+            if(temp.data.equals(searchData))
+            {
+                searchedNode=temp;
+
+            }
+            temp=temp.next;
+        }
+        return searchedNode;
     }
 
 
@@ -63,6 +78,4 @@ public class LinkedList<T> {
             temp = temp.next;
         }
     }
-
-
 }

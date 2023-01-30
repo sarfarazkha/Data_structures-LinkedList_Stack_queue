@@ -9,5 +9,9 @@ public class LinkedListMian {
         linkedList.push(30);
         linkedList.push(56);
         linkedList.display();
+
+        linkedList.add(30);
+        linkedList.add(70);
+        linkedList.display();
     }
 }

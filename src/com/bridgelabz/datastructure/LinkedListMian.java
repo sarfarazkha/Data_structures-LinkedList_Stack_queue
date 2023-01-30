@@ -22,6 +22,5 @@ public class LinkedListMian {
 
         linkedList.poplast();
         linkedList.display();
-
     }
 }

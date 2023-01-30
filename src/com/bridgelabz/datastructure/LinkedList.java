@@ -32,6 +32,29 @@ public class LinkedList<T> {
         newnode.next=tail;
     }
 
+    public T popFirst() {
+        Node<T> popelement = head;
+        T element=popelement.data;
+        Node<T> nextelem=popelement.next;
+        popelement.data=null;
+        popelement.next=null;
+        head=nextelem;
+        return element;
+
+    }
+
+    public T poplast() {
+        T popData = tail.data;
+        Node <T> temp = head;
+        while (temp.next != tail){
+            temp = temp.next;
+        }
+        temp.next = null;
+        tail = temp;
+        return popData;
+
+    }
+
 
     public void display() {
         Node<T> temp = head;
@@ -40,4 +63,6 @@ public class LinkedList<T> {
             temp = temp.next;
         }
     }
+
+
 }

@@ -16,5 +16,12 @@ public class LinkedListMian {
 
         linkedList.insertBetween(30);
         linkedList.display();
+
+        linkedList.popFirst();
+        linkedList.display();
+
+        linkedList.poplast();
+        linkedList.display();
+
     }
 }

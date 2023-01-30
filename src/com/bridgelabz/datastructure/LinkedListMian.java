@@ -10,23 +10,30 @@ public class LinkedListMian {
         linkedList.push(56);
         linkedList.display();
 
-        linkedList.add(30);
-        linkedList.add(70);
-        linkedList.display();
 
-        linkedList.insertBetween(30);
-        linkedList.display();
+        LinkedList linkedList1 = new LinkedList();
+        linkedList1.add(56);
+        linkedList1.add(30);
+        linkedList1.add(70);
+        linkedList1.display();
 
-        linkedList.popFirst();
-        linkedList.display();
 
-        linkedList.poplast();
-        linkedList.display();
+        linkedList1.insertBetween(30);
+        linkedList1.display();
 
-        linkedList.search(30);
-        linkedList.display();
+        linkedList1.popFirst();
+        linkedList1.display();
+
+        linkedList1.poplast();
+        linkedList1.display();
+
+        linkedList1.search(30);
+        linkedList1.display();
 
         linkedList.insertAfter(40,30);
+        linkedList.display();
+
+        linkedList.delete(40);
         linkedList.display();
     }
 }

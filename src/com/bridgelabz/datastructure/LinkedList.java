@@ -89,4 +89,18 @@ public class LinkedList<T> {
             newNode.next = nextNode;
         }
     }
+
+    public void delete(T data){
+        Node<T> temp = head;
+        Node<T> previousNode = null;
+
+        while(temp!=null){
+            if(temp.data.equals(data)){
+                break;
+            }
+            previousNode = temp;
+            temp = temp.next;
+        }
+        previousNode.next=temp.next;
+    }
 }

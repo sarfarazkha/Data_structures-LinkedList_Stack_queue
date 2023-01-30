@@ -103,4 +103,22 @@ public class LinkedList<T> {
         }
         previousNode.next=temp.next;
     }
+
+    public void sort(){
+        Node<T> temp = head;
+        Node<T> index= temp.next;
+        Integer value=0;
+
+        while(temp!=null){
+            while(index!=null) {
+                if ((Integer) temp.data > (Integer) index.data) {
+                    value = (Integer) temp.data;
+                    temp.data = index.data;
+                    index.data = (T) value;
+                }
+                index=index.next;
+            }
+            temp=temp.next;
+        }
+    }
 }

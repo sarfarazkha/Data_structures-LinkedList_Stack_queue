@@ -35,5 +35,9 @@ public class LinkedListMian {
 
         linkedList.delete(40);
         linkedList.display();
+
+        linkedList.sort();
+        System.out.println();
+        linkedList.display();
     }
 }

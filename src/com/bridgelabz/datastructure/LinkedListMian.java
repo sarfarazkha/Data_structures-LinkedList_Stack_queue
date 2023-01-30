@@ -23,7 +23,10 @@ public class LinkedListMian {
         linkedList.poplast();
         linkedList.display();
 
-        linkedList.Search(30);
+        linkedList.search(30);
+        linkedList.display();
+
+        linkedList.insertAfter(40,30);
         linkedList.display();
     }
 }

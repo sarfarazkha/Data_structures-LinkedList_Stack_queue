@@ -54,8 +54,7 @@ public class LinkedList<T> {
         return popData;
     }
 
-    public Node<T> Search(T searchData)
-    {
+    public Node<T> search(T searchData) {
         Node<T> temp=head;
         Node<T> searchedNode=null;
         while(temp!=null)
@@ -71,11 +70,23 @@ public class LinkedList<T> {
     }
 
 
+
+
     public void display() {
         Node<T> temp = head;
         while (temp != null) {
             System.out.print(temp.data + "--->");
             temp = temp.next;
+        }
+    }
+
+    public void insertAfter(T insertData , T searchData) {
+        Node<T> searchedData = search(searchData);
+        if (searchedData != null){
+            Node<T> newNode = new Node(insertData);
+            Node<T>nextNode = searchedData.next;
+            searchedData.next = newNode;
+            newNode.next = nextNode;
         }
     }
 }

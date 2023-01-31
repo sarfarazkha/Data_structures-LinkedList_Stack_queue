@@ -57,5 +57,13 @@ public class LinkedListMian {
         stackList.popPeekTillEmpty();
         stackList.display();
 
+        System.out.println("\n*******************Queue****************");
+
+        Queue queuelist = new Queue();
+        queuelist.enque(56);
+        queuelist.enque(30);
+        queuelist.enque(70);
+
+        queuelist.display();
     }
 }

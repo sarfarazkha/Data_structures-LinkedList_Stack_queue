@@ -39,5 +39,15 @@ public class LinkedListMian {
         linkedList.sort();
         System.out.println();
         linkedList.display();
+
+        System.out.println("\n*******************Stacks****************");
+
+        Stack stackVariable = new Stack();
+        stackVariable.push(70);
+        stackVariable.push(30);
+        stackVariable.push(56);
+
+        stackVariable.display();
+
     }
 }

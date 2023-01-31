@@ -9,6 +9,10 @@ public class Stack<T> {
     public void push(T data){
         list.push(data);
     }
+
+    public void peek(){
+        System.out.println("Popped Element : "+list.head.data);
+    }
     public void display() {
         list.display();
     }

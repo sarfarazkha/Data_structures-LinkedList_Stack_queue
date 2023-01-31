@@ -42,12 +42,14 @@ public class LinkedListMian {
 
         System.out.println("\n*******************Stacks****************");
 
-        Stack stackVariable = new Stack();
-        stackVariable.push(70);
-        stackVariable.push(30);
-        stackVariable.push(56);
+        Stack stackList = new Stack();
+        stackList.push(70);
+        stackList.push(30);
+        stackList.push(56);
+        stackList.display();
 
-        stackVariable.display();
+        stackList.peek();
+        stackList.display();
 
     }
 }

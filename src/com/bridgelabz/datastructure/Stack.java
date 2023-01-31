@@ -13,6 +13,10 @@ public class Stack<T> {
     public void peek(){
         System.out.println("Popped Element : "+list.head.data);
     }
+
+    public void pop(){
+        list.poplast();
+    }
     public void display() {
         list.display();
     }

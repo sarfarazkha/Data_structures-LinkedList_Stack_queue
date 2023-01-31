@@ -10,8 +10,12 @@ public class Queue<T> {
         linkedList.add(data);
     }
 
+    public void pop() {
+        System.out.println("\nPopped Element is : "+linkedList.head.data);
+        linkedList.popFirst();
+    }
+
     public void display(){
         linkedList.display();
     }
-
 }

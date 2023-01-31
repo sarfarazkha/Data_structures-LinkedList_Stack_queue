@@ -65,5 +65,8 @@ public class LinkedListMian {
         queuelist.enque(70);
 
         queuelist.display();
+
+        queuelist.pop();
+        queuelist.display();
     }
 }

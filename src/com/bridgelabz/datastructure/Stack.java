@@ -17,6 +17,16 @@ public class Stack<T> {
     public void pop(){
         list.poplast();
     }
+
+    public void popPeekTillEmpty() {
+        while(list.head!=null) {
+            peek();
+            pop();
+            display();
+            System.out.print("\n");
+        }
+        System.out.println("Stack is now Empty");
+    }
     public void display() {
         list.display();
     }

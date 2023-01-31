@@ -54,5 +54,8 @@ public class LinkedListMian {
         stackList.pop();
         stackList.display();
 
+        stackList.popPeekTillEmpty();
+        stackList.display();
+
     }
 }

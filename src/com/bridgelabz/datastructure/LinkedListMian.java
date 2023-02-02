@@ -40,6 +40,7 @@ public class LinkedListMian {
         System.out.println();
         linkedList.display();
 
+
         System.out.println("\n*******************Stacks****************");
 
         Stack stackList = new Stack();

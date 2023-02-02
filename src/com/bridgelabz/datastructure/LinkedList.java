@@ -78,6 +78,7 @@ public class LinkedList<T> {
             System.out.print(temp.data + "--->");
             temp = temp.next;
         }
+        System.out.println();
     }
 
     public void insertAfter(T insertData , T searchData) {

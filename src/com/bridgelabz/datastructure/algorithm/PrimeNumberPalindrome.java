@@ -42,7 +42,7 @@ public class PrimeNumberPalindrome {
             }
             if (number == value) {
                 if(number != 929) {
-                    System.out.print(value + " is a palindrome, ");
+                    System.out.print(value + " is a not palindrome, ");
                 }else{
                     System.out.print(value + " is a palindrome.");
                 }
